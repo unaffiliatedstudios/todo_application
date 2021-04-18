@@ -1,13 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import axios from "axios";
 
 class TodoApp extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      todoItems: [],
+    };
+  }
   render() {
-    return (
-      <div className="row">
-        <p>TodoApp</p>
-      </div>
-    );
+    return <p>TodoApp</p>;
   }
 }
 
