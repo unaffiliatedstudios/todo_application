@@ -16,4 +16,8 @@ class Api::V1::TodoItemsController < ApplicationController
         def set_todo_item
             @todo_item = TodoItem.find(params[:id])
         end
+
+        def authorized?
+            @todo_item.user == current_user
+        end
 end
