@@ -1,24 +1,28 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Ruby on Rails with React Tutorial
 
-Things you may want to cover:
+This codebase follows the [Ruby on Rails with React Tutorial](https://stevepolito.design/blog/rails-react-tutorial/) by Steve
+Polito. The article states a read time of 70 minutes. It is filled with tons of concepts: PropTypes, API namespacing, authorization, authentication, and role based authentication using Devise.
 
-* Ruby version
+- Ruby version: 2.7.1
 
-* System dependencies
+- System dependencies:
 
-* Configuration
+  - [Lodash](https://lodash.com/)
+  - [Axios](https://www.npmjs.com/package/axios)
+  - [Devise](https://github.com/heartcombo/devise)
 
-* Database creation
+- Configuration
 
-* Database initialization
+- Database creation
 
-* How to run the test suite
+- Database initialization
 
-* Services (job queues, cache servers, search engines, etc.)
+- How to run the test suite
 
-* Deployment instructions
+- Services (job queues, cache servers, search engines, etc.)
 
-* ...
+- Deployment instructions
+
+- ...
