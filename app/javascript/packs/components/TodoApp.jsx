@@ -8,7 +8,24 @@ class TodoApp extends React.Component {
     this.state = {
       todoItems: [],
     };
+    this.getTodoItems = this.getTodoItems.bind(this);
   }
+  componentDidMount() {
+    this.getTodoItems();
+  }
+
+  getTodoItems() {
+    axios
+      .get("/api/v1/todo_items")
+      .then((response) => {
+        const todoItems = response.data;
+        this.setState({ todoItems });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+
   render() {
     return <p>TodoApp</p>;
   }
